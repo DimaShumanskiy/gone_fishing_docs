@@ -1,5 +1,8 @@
 ---
 title: Gone Fishing — Privacy Policy
+layout: default
+lang: en
+alt: /privacy-ru.html
 ---
 
 # Gone Fishing Privacy Policy
@@ -54,4 +57,4 @@ The game is not intended for children under 13, and we do not knowingly collect 
 
 If this policy changes, the new version will appear on this page with a new date.
 
-[Русская версия](privacy-ru)
+[Русская версия]({{ '/privacy-ru.html' | relative_url }})

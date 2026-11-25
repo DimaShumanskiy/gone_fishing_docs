@@ -1,12 +1,18 @@
 ---
 title: Gone Fishing
+lang: en
+home: true
+alt: /index-ru.html
 ---
 
-# Gone Fishing
+<p class="tagline">A calm fishing game: quiet ponds and rivers, real fish species and trophies for your collection.</p>
 
-A relaxing fishing game for iOS and Android.
+<div class="stores">
+  <a class="btn" href="#" aria-disabled="true">App Store <small>soon</small></a>
+  <a class="btn" href="#" aria-disabled="true">Google Play <small>soon</small></a>
+</div>
 
-- [Privacy Policy](privacy) · [Политика конфиденциальности](privacy-ru)
-- [Support](support) · [Поддержка](support-ru)
-
-Contact: [gonefishing.support@gmail.com](mailto:gonefishing.support@gmail.com)
+<ul class="links">
+  <li><a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a></li>
+  <li><a href="{{ '/support.html' | relative_url }}">Support</a></li>
+</ul>

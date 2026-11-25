@@ -1,5 +1,8 @@
 ---
 title: Gone Fishing — политика конфиденциальности
+layout: default
+lang: ru
+alt: /privacy.html
 ---
 
 # Политика конфиденциальности Gone Fishing
@@ -54,4 +57,4 @@ title: Gone Fishing — политика конфиденциальности
 
 Если политика изменится, новая версия появится на этой странице с новой датой.
 
-[English version](privacy)
+[English version]({{ '/privacy.html' | relative_url }})

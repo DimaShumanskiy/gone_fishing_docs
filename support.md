@@ -1,5 +1,8 @@
 ---
 title: Gone Fishing — Support
+layout: default
+lang: en
+alt: /support-ru.html
 ---
 
 # Gone Fishing Support
@@ -16,6 +19,6 @@ The easiest way is from the game: Help → Help tab → "Contact us". The email 
 
 **Notifications don't arrive.** Check that they are on in the game settings and in your phone settings for Gone Fishing.
 
-**How do I delete my data?** Settings → Account → "Delete data on the server". More in the [privacy policy](privacy).
+**How do I delete my data?** Settings → Account → "Delete data on the server". More in the [privacy policy]({{ '/privacy.html' | relative_url }}).
 
-[Русская версия](support-ru)
+[Русская версия]({{ '/support-ru.html' | relative_url }})

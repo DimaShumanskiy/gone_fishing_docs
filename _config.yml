@@ -1,2 +1,15 @@
 title: Gone Fishing
-theme: jekyll-theme-minimal
+baseurl: /gone_fishing_docs
+url: https://dimashumanskiy.github.io
+email: gonefishing.support@gmail.com
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: en
+
+exclude:
+  - README.md

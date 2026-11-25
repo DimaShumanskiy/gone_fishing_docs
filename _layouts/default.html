@@ -1,0 +1,65 @@
+{%- assign ru = false -%}
+{%- if page.lang == 'ru' -%}{%- assign ru = true -%}{%- endif -%}
+{%- if ru -%}
+  {%- assign home = '/index-ru.html' -%}
+  {%- assign privacy = '/privacy-ru.html' -%}
+  {%- assign support = '/support-ru.html' -%}
+  {%- assign logo = '/assets/img/logo-ru.webp' -%}
+{%- else -%}
+  {%- assign home = '/' -%}
+  {%- assign privacy = '/privacy.html' -%}
+  {%- assign support = '/support.html' -%}
+  {%- assign logo = '/assets/img/logo-en.webp' -%}
+{%- endif -%}
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{% if ru %}Спокойная игра про рыбалку для iOS и Android.{% else %}A relaxing fishing game for iOS and Android.{% endif %}">
+  <link rel="icon" type="image/webp" href="{{ '/assets/img/icon.webp' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/icon.webp' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body{% if page.home %} class="home"{% endif %}>
+  <div class="bg" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="{{ home | relative_url }}">
+      <img src="{{ '/assets/img/icon.webp' | relative_url }}" alt="" width="40" height="40">
+      <span>Gone Fishing</span>
+    </a>
+    <nav class="lang" aria-label="{% if ru %}Язык{% else %}Language{% endif %}">
+      {%- if page.alt %}
+      {%- if ru %}
+      <a href="{{ page.alt | relative_url }}" hreflang="en">EN</a>
+      <span aria-current="page">RU</span>
+      {%- else %}
+      <span aria-current="page">EN</span>
+      <a href="{{ page.alt | relative_url }}" hreflang="ru">RU</a>
+      {%- endif %}
+      {%- endif %}
+    </nav>
+  </header>
+
+  <main class="card">
+    {%- if page.home %}
+    <img class="logo" src="{{ logo | relative_url }}" alt="Gone Fishing" width="640">
+    {%- endif %}
+    {{ content }}
+  </main>
+
+  <footer class="foot">
+    <nav>
+      <a href="{{ privacy | relative_url }}">{% if ru %}Конфиденциальность{% else %}Privacy{% endif %}</a>
+      <a href="{{ support | relative_url }}">{% if ru %}Поддержка{% else %}Support{% endif %}</a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </nav>
+    <p>© {{ 'now' | date: '%Y' }} Gone Fishing</p>
+  </footer>
+</body>
+</html>
