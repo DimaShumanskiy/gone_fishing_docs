@@ -3,11 +3,13 @@
 {%- if ru -%}
   {%- assign home = '/index-ru.html' -%}
   {%- assign privacy = '/privacy-ru.html' -%}
+  {%- assign terms = '/terms-ru.html' -%}
   {%- assign support = '/support-ru.html' -%}
   {%- assign logo = '/assets/img/logo-ru.webp' -%}
 {%- else -%}
   {%- assign home = '/' -%}
   {%- assign privacy = '/privacy.html' -%}
+  {%- assign terms = '/terms.html' -%}
   {%- assign support = '/support.html' -%}
   {%- assign logo = '/assets/img/logo-en.webp' -%}
 {%- endif -%}
@@ -56,10 +58,11 @@
   <footer class="foot">
     <nav>
       <a href="{{ privacy | relative_url }}">{% if ru %}Конфиденциальность{% else %}Privacy{% endif %}</a>
+      <a href="{{ terms | relative_url }}">{% if ru %}Условия{% else %}Terms{% endif %}</a>
       <a href="{{ support | relative_url }}">{% if ru %}Поддержка{% else %}Support{% endif %}</a>
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </nav>
-    <p>© {{ 'now' | date: '%Y' }} Gone Fishing</p>
+    <p>© {{ 'now' | date: '%Y' }} {{ site.owner }}. {% if ru %}Все права защищены.{% else %}All rights reserved.{% endif %}</p>
   </footer>
 </body>
 </html>

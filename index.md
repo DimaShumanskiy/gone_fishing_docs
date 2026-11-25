@@ -14,5 +14,6 @@ alt: /index-ru.html
 
 <ul class="links">
   <li><a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a></li>
+  <li><a href="{{ '/terms.html' | relative_url }}">Terms of Service</a></li>
   <li><a href="{{ '/support.html' | relative_url }}">Support</a></li>
 </ul>

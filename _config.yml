@@ -2,6 +2,7 @@ title: Gone Fishing
 baseurl: /gone_fishing_docs
 url: https://dimashumanskiy.github.io
 email: gonefishing.support@gmail.com
+owner: "Dmitry Shumansky"
 markdown: kramdown
 
 defaults:

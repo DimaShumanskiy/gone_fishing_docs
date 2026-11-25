@@ -14,5 +14,6 @@ alt: /
 
 <ul class="links">
   <li><a href="{{ '/privacy-ru.html' | relative_url }}">Политика конфиденциальности</a></li>
+  <li><a href="{{ '/terms-ru.html' | relative_url }}">Условия использования</a></li>
   <li><a href="{{ '/support-ru.html' | relative_url }}">Поддержка</a></li>
 </ul>
